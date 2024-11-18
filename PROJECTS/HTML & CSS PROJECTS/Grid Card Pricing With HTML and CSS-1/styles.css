@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'montserrat', sans-serif;
+    font-weight:600;
+    line-height:1.6;
+    background-color: #27264b;
+
+}
+
+.flex-container{
+    background-color:#ffffff;
+    border-radius:10px;
+    padding:70px 60px;
+    margin:0 auto;
+    margin-top: 300px;
+    max-width:2000px;
+  
+
+}
+
+.flex-item{
+    display:flex;
+    justify-content:space-around;
+    gap:30px;
+    flex-wrap:wrap;
+    
+}
+
+.card-free{
+    background-color:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    text-align:center;
+    flex:1;
+}
+
+
+.card-pro{
+    background-color:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    text-align:center;
+    flex:1;
+    
+}
+
+
+.card-enterprise{
+    background-color:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    text-align:center;
+    flex:1;
+}
+
+.card-free h2{
+    padding:10px;
+    font-size:18px;
+    text-align:center;
+    color:#333;
+    background:#f8fafe; 
+}
+
+.card-pro h2{
+    padding:10px;
+    font-size:18px;
+    text-align:center;
+    color:#fff;
+    background:linear-gradient(to right,#112cc75f,#9055ffb0);
+}
+
+
+.card-enterprise h2{
+    padding:10px;
+    font-size:18px;
+    text-align:center;
+    color:#fff;
+    font-weight:500;
+    background:linear-gradient(to right,#ff95bee0,#ffc880);
+}
+
+.price{
+    font-size:45px;
+    font-weight:500;
+    padding:20px;
+    text-align:center;
+}
+
+.price sup{
+    font-size:18px;
+    position:relative;
+    left:-5px;
+}
+
+.price span{
+    font-size:18px;
+    margin-left:5px;
+}
+
+.price-info{
+    text-align:center;
+    font-size:15px;
+    font-weight:500;  
+}
+
+.main-text{
+    font-size:14px;
+    padding:5px;
+    text-align:center;
+    margin-top:5px;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.link{
+    display:block;
+    border:1px solid black;
+    border-radius:10px;
+    text-align:center;
+    padding:10px;
+    margin-top:30px;
+    background-color:#ffffff;
+}
+
+.link-2{
+    display:block;
+    border:1px solid black;
+    border-radius:10px;
+    text-align:center;
+    padding:10px;
+    margin-top:30px;
+    background:#27264b;
+    color:white;
+}
+
+.list{
+    list-style-type:none;
+    padding:5px;
+    padding-top:50px;
+   
+}
+
+li{
+    margin-bottom:10px;
+    
+}
+i{
+    color:green;
+}
+
+
+.link:hover{
+    background-color: #4577b8;   
+    color:white;
+}
+.link-2:hover{
+    background-color:#45b8b8;
+    color:#27264b;   
+}
+
