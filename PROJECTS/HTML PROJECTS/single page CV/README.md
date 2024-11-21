@@ -19,4 +19,7 @@ Special thanks to Roadmap.sh for providing the project guidelines.
 
 Contact
 Email: joelhanson002@gmail.com
-Project URL: Roadmap.sh Single Page CV
+Project URL 
+
+https://roadmap.sh/projects/single-page-cv
+
