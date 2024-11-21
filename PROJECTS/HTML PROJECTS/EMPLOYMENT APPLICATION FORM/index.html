@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title> Employment Form </title>
+</head>
+<body>
+    <h1> EMPLOYMENT / JOB APPLICATION </h1>
+    <form action="https://httpbin.org/get" method="get">
+    <div class="Personal">
+        <h2> PERSONAL INFORMATION </h2>
+
+        <label><strong>FULL NAME:</strong></label>
+        <input type="text" name="first-name" placeholder="First name" required >
+        <input type="text" name="middle-name" placeholder="Middle Name" required >
+        <input type="text" name="last-name" placeholder="Last Name" required > &nbsp;&nbsp;&nbsp;<br><br>
+
+        <label for="date"><strong>DATE OF BIRTH:</strong></label>
+       <input type="rext" name="date" placeholder="Dob" > 
+       <br>
+       <br>
+
+       <label for="street-address"><strong> STREET ADDRESS: </strong></label>
+      <input type="text" id="street-address" name="street-address" placeholder="123 Main St" required size="70" >
+<br><br>
+
+    <label for="city"><strong>CITY:</strong></label>
+    <input type="text" id="city" name="city" placeholder="City" required size="80">
+    <br><br>
+
+    <label for="state"> <strong>STATE:</strong></label>
+    <input type="text" id="state" name="state" placeholder="State"  required size="80">
+
+    <BR></BR>
+    <label for=""> <strong> E-MAIL:</strong></label>
+    <input type="email" name="email" placeholder="name@gmail.com" required size="50"> <br><br>
+    <label for="phone"><strong> PHONE:</strong></label>
+    <input type="number" maxlength="11" placeholder="+234" required>
+    <br><br>
+    <label for="ssn"><strong> SOCIAL SECURITY NUMBER (SSN):</strong></label>
+    <input type="number" name="ssn" required> <br><br>
+
+
+    <label for="avalability"><strong> DATE AVAILABLE:</strong></label>
+    <input type="date" name="availablity" required> <br><br>
+    
+
+    <label for="position"><strong>POSITION APPLIED FOR:</strong></label>
+    <select id="job" name="position">
+    <option value="POSITION">POSITION</option>
+    <option value="DOCTOR">DOCTOR</option>
+    <option value="NURSE">NURSE</option>
+    <option value="SURVEYOR">SURVEYOR</option>
+    <option value="GIS-EXPERT">GIS-EXPERT</option>
+  </select>
+    <br><br>
+    <label for="pay"><strong> DESIRED PAY: $</strong></label>
+    <input type="text" name="desired-pay" size="10">
+    <label><input type="radio" name="pay-type" value="hour" > Hour</label>
+    <label><input type="radio" name="pay-type" value="salary" > Salary</label>
+    <br><br>
+   
+
+    <label for="employment"><strong>EMPLOYMENT DESIRED:</strong></label>
+    <label for="fulltime"><small>FULL-TIME</small></label>
+    <input type="checkbox" id="employment" name="">
+    <label for="parttime"><small>PART-TIME</small></label>
+    <input type="checkbox" id="employment" name="">
+    <label for="seasonal"><small>SEASONAL</small></label>
+    <input type="checkbox" id="employment" name="seasonal">
+
+    <br><br>
+
+    <h2> EMPLOYMENT ELIGIBILITY </h2>
+    <label for="work"><strong> ARE YOU A U.S CITIZEN?</strong></label> 
+    
+    <label><input type="radio" name="us-citizen" value="yes"> Yes</label>
+    <label><input type="radio" name="us-citizen" value="no"> No</label><br><br>
+
+    <label for="work permit"> <strong> IF NO, ARE YOU ALLOWED TO WORK IN THE U.S?</strong></label>
+    <label for=""></label>
+    <label><input type="radio" name="work-allowed" value="yes"> Yes</label>
+    <label><input type="radio" name="work-allowed" value="no"> No</label>
+    <br>
+    <br>
+
+    <label><strong> HAVE YOU EVER WORKED FOR THIS EMPLOYER:</strong></label>
+
+    <label><input type="radio" name="worked-before" value="yes"> Yes</label>
+    <label><input type="radio" name="worked-before" value="no"> No</label>
+
+    <br><br>
+
+    <label> <strong>IF YES, ENTER THE START AND END DATES:</strong> </label>&nbsp;Start:
+    <input type="date" name="start-date" placeholder="Start Date"> End:
+    <input type="date" name="end-date" placeholder="End Date">
+    <br><br>
+
+    <label> <strong>HAVE YOU EVER BEEN CONVICTED OF ANY FELONY:</strong> </label>
+    <label><input type="radio" name="felony" value="yes">YES</label>
+    <label><input type="radio" name="felony" value="no">NO</label>
+    <br><br>
+    <label> <strong>IF YES, PLEASE EXPLAIN:</strong> </label>
+    <textarea name="message"  rows="5" cols="90" placeholder="Kindly state your reasons" style="border:2px solid black"></textarea>
+
+
+    <h2> EDUCATION </h2>
+
+    <label><strong> HIGH SCHOOL:</strong></label>
+    <input type="text" name="high-school" size="25" required>&nbsp;&nbsp;&nbsp;
+    <label> CITY/STATE:</label>
+    <input type="text" name="hs-city" size="30" required>
+    <br><br>
+    <label> FROM:</label>
+    <input type="text" name="hs-from" size="30" required>&nbsp;&nbsp;
+    <label> TO:</label>
+    <input type="text" name="hs-from" size="30" required>&nbsp;&nbsp;
+    
+    <br> <br>
+    <label>GRADUATE?</label>
+    <label><input type="radio" name="hs-graduate" value="yes">YES</label>
+    <label><input type="radio" name="hs-graduate" value="no">NO</label> <br><br>
+
+   <label><strong> COLLEGE:</strong></label>
+   <input type="text" name="college" size="25" required>
+    <label> CITY/STATE:</label>
+    <input type="text" name="college-city" size="25" required>
+    <br><br>
+    <label> FROM:</label>
+    <input type="text" name="college-from" size="30" required>&nbsp;&nbsp;
+    <label> TO:</label>
+    <input type="text" name="college-to"size="30" required>
+    <br> <br>
+    <label>GRADUATE?</label>
+    <label><input type="radio" name="college-graduate" value="yes">YES</label>
+    <label><input type="radio" name="college-graduate" value="no">NO</label>
+    <br><br>
+    <input type="submit" value="submit" class="submit-btn">
+    
+
+
+    </form>
+    
+</body>
+</html>
+
+
