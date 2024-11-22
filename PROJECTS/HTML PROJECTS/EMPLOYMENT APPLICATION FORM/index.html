@@ -13,13 +13,13 @@
     <div class="Personal">
         <h2> PERSONAL INFORMATION </h2>
 
-        <label><strong>FULL NAME:</strong></label>
-        <input type="text" name="first-name" placeholder="First name" required >
+        <label for="first-name"><strong>FULL NAME:</strong></label>
+        <input type="text" id="first-name" name="first-name" placeholder="First name" required >
         <input type="text" name="middle-name" placeholder="Middle Name" required >
         <input type="text" name="last-name" placeholder="Last Name" required > &nbsp;&nbsp;&nbsp;<br><br>
 
         <label for="date"><strong>DATE OF BIRTH:</strong></label>
-       <input type="rext" name="date" placeholder="Dob" > 
+       <input type="text" id="date" name="date" placeholder="Dob" > 
        <br>
        <br>
 
@@ -35,21 +35,21 @@
     <input type="text" id="state" name="state" placeholder="State"  required size="80">
 
     <BR></BR>
-    <label for=""> <strong> E-MAIL:</strong></label>
-    <input type="email" name="email" placeholder="name@gmail.com" required size="50"> <br><br>
+    <label for="email"> <strong> E-MAIL:</strong></label>
+    <input type="email" id="email"  name="email" placeholder="name@gmail.com" required size="50"> <br><br>
     <label for="phone"><strong> PHONE:</strong></label>
-    <input type="number" maxlength="11" placeholder="+234" required>
+    <input type="number" id="phone" maxlength="11" placeholder="+234" required>
     <br><br>
     <label for="ssn"><strong> SOCIAL SECURITY NUMBER (SSN):</strong></label>
-    <input type="number" name="ssn" required> <br><br>
+    <input type="number" id="ssn" name="ssn" required> <br><br>
 
 
-    <label for="avalability"><strong> DATE AVAILABLE:</strong></label>
-    <input type="date" name="availablity" required> <br><br>
+    <label for="availability"><strong> DATE AVAILABLE:</strong></label>
+    <input type="date" id="availability" name="availablity" required> <br><br>
     
 
     <label for="position"><strong>POSITION APPLIED FOR:</strong></label>
-    <select id="job" name="position">
+    <select id="position" name="position">
     <option value="POSITION">POSITION</option>
     <option value="DOCTOR">DOCTOR</option>
     <option value="NURSE">NURSE</option>
@@ -58,14 +58,14 @@
   </select>
     <br><br>
     <label for="pay"><strong> DESIRED PAY: $</strong></label>
-    <input type="text" name="desired-pay" size="10">
+    <input type="text" id="pay" name="desired-pay" size="10">
     <label><input type="radio" name="pay-type" value="hour" > Hour</label>
     <label><input type="radio" name="pay-type" value="salary" > Salary</label>
     <br><br>
    
 
     <label for="employment"><strong>EMPLOYMENT DESIRED:</strong></label>
-    <label for="fulltime"><small>FULL-TIME</small></label>
+    <label for="employment"><small>FULL-TIME</small></label>
     <input type="checkbox" id="employment" name="">
     <label for="parttime"><small>PART-TIME</small></label>
     <input type="checkbox" id="employment" name="">
@@ -109,30 +109,30 @@
 
     <h2> EDUCATION </h2>
 
-    <label><strong> HIGH SCHOOL:</strong></label>
-    <input type="text" name="high-school" size="25" required>&nbsp;&nbsp;&nbsp;
-    <label> CITY/STATE:</label>
-    <input type="text" name="hs-city" size="30" required>
+    <label for="high-school"><strong> HIGH SCHOOL:</strong></label>
+    <input type="text" id="high-school" name="high-school" size="40" required>&nbsp;&nbsp;&nbsp;
+    <label for="city-1"> CITY/STATE:</label>
+    <input type="text" id="city-1" name="hs-city" size="15" required>
     <br><br>
-    <label> FROM:</label>
-    <input type="text" name="hs-from" size="30" required>&nbsp;&nbsp;
-    <label> TO:</label>
-    <input type="text" name="hs-from" size="30" required>&nbsp;&nbsp;
+    <label for="from"> FROM:</label>
+    <input type="text" id="from" name="hs-from" size="30" required>&nbsp;&nbsp;
+    <label for="to"> TO:</label>
+    <input type="text" id="to" name="hs-from" size="30" required>&nbsp;&nbsp;
     
     <br> <br>
     <label>GRADUATE?</label>
     <label><input type="radio" name="hs-graduate" value="yes">YES</label>
     <label><input type="radio" name="hs-graduate" value="no">NO</label> <br><br>
 
-   <label><strong> COLLEGE:</strong></label>
-   <input type="text" name="college" size="25" required>
-    <label> CITY/STATE:</label>
-    <input type="text" name="college-city" size="25" required>
+   <label for="college"><strong> COLLEGE:</strong></label>
+   <input type="text" id="college" name="college" size="25" required>
+    <label for="city-2"> CITY/STATE:</label>
+    <input type="text" id="city-2" name="college-city" size="25" required>
     <br><br>
-    <label> FROM:</label>
-    <input type="text" name="college-from" size="30" required>&nbsp;&nbsp;
-    <label> TO:</label>
-    <input type="text" name="college-to"size="30" required>
+    <label for="from-1"> FROM:</label>
+    <input type="text" id="from-1" name="college-from" size="30" required>&nbsp;&nbsp;
+    <label for="to-1"> TO:</label>
+    <input type="text" id="to-1" name="college-to"size="30" required>
     <br> <br>
     <label>GRADUATE?</label>
     <label><input type="radio" name="college-graduate" value="yes">YES</label>
