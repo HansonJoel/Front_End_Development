@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .flex-container{
+    background-color:#ffffff;
+    border-radius:10px;
+    padding:25px 30px;
+    margin:0 auto;
+    margin-top: 150px;
+    max-width:1100px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    height:700px;
+}
+
+.flex-container .title {
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+.flex-item{
+    display:flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
+.column1{
+    background-color:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    text-align:left;
+    width: 300px;
+    flex:1;
+}
+.column2{
+    background-color:#fff;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    text-align:left;
+    flex: 1;  
+}
+
+.gender-title {
+    font-size: 25px;
+    font-weight: 500px;
+    text-align:left;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.gender-details {
+display:flex;
+align-items: left;
+width: 900px;
+}
+
+/* Styling the input element */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="submit"] {
+  outline: none;
+  height: 45px;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+ /* input element change color when focused */
+.column1 input:focus,
+.column1 input:valid 
+{
+  border-color: #9b59b6;
+  transition: all 0.3s ease;
+}
+
+.column2 input:focus,
+.column2 input:valid 
+{
+  border-color: #9b59b6;
+  transition: all 0.3s ease;
+} 
+
+
+/* styling the radio button */
+input[type="radio"] {
+    appearance: none; /* Removes default styling of the radio button */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #d9d9d9; 
+    margin-right: 200px;
+    transition: all 0.3s ease;
+
+  }
+
+  input[type="radio"] {
+    gap:2px; /* Adds space between the radio button and its label */
+}
+
+  /* Radio button change color when checked */
+input[type="radio"]:checked {
+    background-color: #9b59b6; /* Change to your desired color */
+    border-color: #00b377a4; /* Optional: Change border color */
+  }
+
+
+  /* styling the submit(Register) button */
+  .button input {
+    height: 50px;
+    margin: 35px 0;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  } 
+
+  .button input[type="submit"]:hover {
+    transform: scale(1.05); /*Slightly enlarges the button*/
+  }
+
+
+  
+  
+

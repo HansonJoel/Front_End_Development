@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Admin\Desktop\Front_End_Development\PROJECTS\HTML & CSS PROJECTS\Registration_Form\style.css">
+    <title> Registration Form</title>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="title"> <strong>Registration</strong> </div>
+        <form action="https://httpbin.org/get" method="get">
+        <div class="flex-item">
+            <div class="column1">
+                <label for="full-name"><strong>Full Name</strong> </label> <br>
+                <input type="text" id="full-name" name="full-name" placeholder="Kindly enter your full name" required><br><br>
+
+                <label for="email"> <strong>Email</strong> </label> <br>
+                <input type="email" id="email" name="email" required placeholder="Kindly enter your Email"> <br><br>
+
+                <label for="password"> <strong>Password</strong> </label> <br>
+                <input type="password" id="password" name="password-1" required>
+            </div>
+
+            <div class="column2">
+                <label for="username"> <strong>Username</strong> </label> <br>
+                <input type="text" id="username" name="username" required placeholder="Kindly enter your username" ><br><br>
+
+                <label for="phone"> <strong>Phone Number</strong> </label> <br>
+                <input type="tel" id="phone" name="phone Number" required placeholder="Kindly enter your phone number" ><br><br>
+
+                <label for="password-1"> <strong>Confirm Password</strong> </label> <br>
+                <input type="password" id="password-1" required>
+            </div>
+
+        </div>
+        <br>
+        
+            <div class="gender-title"> <strong>Gender</strong> </div>
+            <br><br>
+             <div class="gender-details"> 
+                <label for="male"> Male</label> 
+                <input type="radio" id="male" name="gender">  
+               
+                <label for="female"> Female</label>
+                <input type="radio" id="female" name="gender">
+               
+                <label for="not-say"> Prefer not to say </label>
+                <input type="radio" id="not-say" name="gender">
+                
+             </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+           
+      </form>  
+    </div>
+</body>
+</html>
