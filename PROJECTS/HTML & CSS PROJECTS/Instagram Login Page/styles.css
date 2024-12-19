@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:linear-gradient(to bottom right,#5e5ad7,#b346a1,#ff8e26,#ffb850);
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+ 
+}
+
+
+.container{
+    /* background-color:black; */
+    border-radius:10px;
+    
+    /* height: 100vh; */
+    /* width: 100%; */
+    margin:100px auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: 100px; */
+    max-width:400px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.flex-item-1{
+      background-color:#ffffff;
+      width: 100%;
+      justify-content:center;
+      align-items: center;
+      
+}
+.flex-item-2{
+    background-color:#ffffff;
+    margin-top: 10px;
+    /* width: 100%; */
+   
+
+    
+}
+
+h1{
+    font-family: 'pacifico', cursive;
+    margin-bottom: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-1{
+    /* padding: 40px; */
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.section-2{
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.form{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Fill the parent container */
+    width: 100%; /* Optional: can set specific width if needed */
+    /* background-color: lightgray;  */
+  
+
+}
+form{
+    display: flex;
+    flex-direction: column; /*Stack inputs and button vertically*/
+    gap: 10px; /* Add spacing between inputs and button */
+    padding: 20px;
+    width: 300px;
+  
+ 
+    
+}
+.form input{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #612080;
+    font-size:12px;
+    /* outline: none; */
+}
+
+
+.submit-btn{
+    background-color: #43aefe;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.or{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color:#8d8f8f;
+}
+  
+.or span{
+    display: block;
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 100px;
+}
+.facebook{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.facebook, a {
+    justify-content: center;
+    text-align: center;
+    text-decoration: none; 
+    color: #55768a;
+}
+
+
+.fb-login{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.fb-login img{
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+
+footer{
+margin-top: 20px;
+}
+.section-2 a{
+    color:#43aefe;
+    font-size: 16px;
+}
+
+.section-2 p{
+    justify-content: center;
+    text-align: center;  
+
+}
+
+.get-app p{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.get-on{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.get-on img{
+    width: 120px;
+}
+
+
+.list-1 ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.list-1 p{
+    display: flex;
+    list-style-type: none;
+    gap: 40px; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.end-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  
+}
+
+footer select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 16px;
+    color: #8e8e8e;
+}
+.end-1 p {
+    color: #8e8e8e;
+}
+
+
