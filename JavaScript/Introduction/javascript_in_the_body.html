@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript in the body of HTML Element </title>
+</head>
+<body>
+    <h2> Demo Javascript in the Body </h2>
+    <p id="demo"> A paragraph</p>
+    <button type="button" onclick="myFunction()"> Try it </button>
+    
+    <script>
+       function myFunction(){
+        document.getElementById("demo").innerHTML ="Paragraph changed";
+       } 
+    </script>
+</body>
+</html>
+
+<!-- In This exercise, i place the Javascript  in the body of the html element. Placing script at the button of the <body> element improves the display speed because script interpretation slows down the display
+ -->

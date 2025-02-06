@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Functions </title>
+</head>
+<body>
+    <h1> Using Function directly as a variable </h1>
+    <p id="demo"></p>
+
+<script>
+function tocelsuis(fahrenheit){
+    return (5/9) * (fahrenheit-32);
+}
+
+let text = "The temperature is " + tocelsuis(77) + "celsuis";
+document.getElementById("demo").innerHTML = text;
+
+
+</script>
+    
+</body>
+</html>
+
+<!-- In this example, i used the function directly instead of using a variable to store the return value -->
