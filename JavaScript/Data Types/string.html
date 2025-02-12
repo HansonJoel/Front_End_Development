@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <h1>String</h1>
+    <p>The String type represents a sequence of characters forming a piece of text. Common operations on texts include concatenation, extraction of the substring, and checking the length of the string. Strings are extensively used in programming and even more so in web development, as both HTML and a big part of Internet content is text.
+
+        The most common use of text in web development includes:
+        
+        links and paths to resources;
+        tokens;
+        checking user-filled forms and input;
+        dynamic content generation
+        Strings, like other primitives, are immutable, so when we want to change even one letter in a string, in reality, we create a new string.</p>     
+
+    <script>
+        let country = "Malawi";
+let continent = 'Africa';
+   
+console.log(country); // -> Malawi
+console.log(typeof country); // -> string
+console.log(continent); // -> Africa
+console.log(typeof continent); // -> string
+
+
+    //If you use double quotes to mark a string, you can place single quotes inside the string, and they will be treated as ordinary characters
+    let  message1  =  "The  vessel  'Mars'  called  at  the  port.";
+    let  message2  =  'Cyclone  "Cilida"  to  pass  close  to  Mauritius.';
+   
+    console.log(message1);  
+    console.log(message2);  
+    
+
+    // If you want to put a single or double quote inside the string, you can also use the escape character – backslash. 
+    let  message_1  =  'The  vessel  \'Mars\'  called  at  the  port.';
+    let  message_2  =  "Cyclone  \"Cilida\"  to  pass  close  to  Mauritius.";
+   
+    console.log(message1);  //  ->  The  vessel  'Mars'  called  at  the  port.
+    console.log(message2);  //  ->  Cyclone  "Cilida"  to  pass  close  to  Mauritius.
+   
+    let  path  =  "C:\\Windows";
+    console.log(path);  //  ->  C:\Windows
+
+
+    </script>
+</body>
+</html>
