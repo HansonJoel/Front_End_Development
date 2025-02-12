@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> VARIABLES </h1>
+    <P>JavaScript Variables can be declared in 4 ways:
+
+        Automatically
+        Using var
+        Using let
+        Using const
+    </P>
+    <script>
+        // Using var
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        console.log(z);
+
+
+        // Using let
+        let day;                      // Declare variable without assigning values
+        let assignValue = 12345;     //  Declare variable and assign a value
+
+
+        let years = 35;              // numeric variables - numbers
+        let someText = " Years old";  // string variable
+        let gameOver = true;          // Boolean- True or False
+
+        alert(years + someText);
+
+
+        // Using const
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+
+        console.log(total);
+
+        // one statement, many Variables
+        /* You can declare many variables in one statement.
+            Start the statement with let and separate the variables by comma: example
+        */
+
+        let person1 = "John Doe", carName1 = "Volvo", price_1 = 200;
+        //      or
+        let person2 = "John Doe",
+        carName2 = "Volvo",
+        price_2 = 200;
+    </script>
+</body>
+</html>

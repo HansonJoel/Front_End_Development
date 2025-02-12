@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1> VARIABLES</h1>
+        <P>
+            Using variables, in other words, declaring, initializing, changing, or reading their values is an elementary part of practically every programming language.<br>
+
+            JavaScript is no exception, as you need to use variables to program in it.<br>
+
+            Remember to declare variables before using them. Pay attention to where you declare them – whether they are local or global.<br>
+
+            Try to use the keywords let and const, not the word var.<br>
+            Knowing the latter will be useful not for understanding the examples found in various sources, but rather so that you can avoid using it yourself.<br>
+
+            Remember not to use the same names for different variables, even if you declare them in different ranges.<br>
+
+            And, of course, give the variables names that will be related to what you want to store in them – the code should be readable not only to the interpreter, but also to people.
+        </P>
+        <h2> Assignment</h2>
+        <p>
+            <figure>
+                <img src="./JavaScript/Variables/variable_exercise_1.png" alt="">
+                <figcaption>
+                    Screenshot of Assignment
+                </figcaption>
+            </figure>
+           
+        </p>
+
+<script>
+    let rose_price = 8;
+    let lily_price = 10;
+    let tulip_price = 2;
+
+    let rose_quantity = 70;
+    let lily_quantity = 50;
+    let tulip_quantity = 120;
+
+    let rose_value = rose_price * rose_quantity;
+    let lily_value = lily_price * lily_quantity;
+    let tulip_value = tulip_price * tulip_quantity;
+    let total = rose_value + lily_value + tulip_value;
+    
+    console.log("Rose - unit price: ",rose_price, ", quantity: ",rose_quantity , ", value: ", rose_value);
+    console.log("lily - unit price: ",lily_price, ", quantity: ",lily_quantity , ", value: ", lily_value);
+    console.log("tulip - unit price: ",tulip_price, ", quantity: ",tulip_quantity , ", value: ", tulip_value);
+    console.log("Total: ",total);
+
+    console.write("Everthing is Good");
+    
+
+</script>
+</body>
+</html>
