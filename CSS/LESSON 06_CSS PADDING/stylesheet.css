@@ -1,0 +1,27 @@
+.section-2{
+    border: 1px dashed black;
+    padding-top:50px;
+    padding-right:30px;
+    padding-bottom: 50px;
+    padding-left:80px   
+}
+
+pre{
+    border: 1px solid black;
+    padding-top:50px;
+    padding-right:30px;
+    padding-bottom: 50px;
+    padding-left:80px
+}
+
+div{
+    width: 50%;
+    border: 1px dashed black;
+    padding-top:50px;
+    padding-right:30px;
+    padding-bottom: 50px;
+    padding-left:80px  
+   
+}
+
+
