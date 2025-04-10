@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box ;
+}
+
+.container{
+    border: 2px dashed red; 
+    font-size:1.5rem;
+
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    margin-left: 4em;
+    padding:1.5em;
+
+    /* margin: 1.5em 2em 2em 2em;      This is shorthand top 1.5em,right 2em,buttom 3em, left 4em */
+   
+}
+
+
+
+
