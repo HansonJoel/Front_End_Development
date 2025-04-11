@@ -1,0 +1,33 @@
+h1{
+    border: solid red;
+    outline-style: dashed;
+}
+
+section1, ul{
+    outline-style: solid;
+}
+
+.outline1{
+    outline-style: dashed;
+}
+.outline2{
+    outline-style: double;
+}
+.outline3{
+    outline-style: groove;
+}
+.outline4{
+    outline-style: ridge;
+}
+.outline5{
+    outline-style: inset;
+}
+.outline6{
+    outline-style: outset;
+}
+.outline7{
+    outline-style: none;
+}
+.outline8{
+    outline-style: hidden;
+}

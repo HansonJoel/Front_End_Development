@@ -1,0 +1,35 @@
+h1{
+    border: solid red;
+    outline-style: dashed;
+    outline-width: 20px;
+}
+
+
+.outline1{
+    outline-style: dashed;
+    outline-width: thin;
+}
+.outline2{
+    outline-style: double;
+    outline-width: medium;
+}
+.outline3{
+    outline-style: groove;
+    outline-width: thick;
+}
+.outline4{
+    outline-style: ridge;
+    outline-width: 1px;
+}
+.outline5{
+    outline-style: inset;
+}
+.outline6{
+    outline-style: outset;
+}
+.outline7{
+    outline-style: none;
+}
+.outline8{
+    outline-style: hidden;
+}
