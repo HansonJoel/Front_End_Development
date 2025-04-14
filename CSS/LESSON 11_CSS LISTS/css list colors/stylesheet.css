@@ -1,0 +1,15 @@
+ul li{
+  background: #ffe5e5;
+}
+
+ul.a {              
+    list-style-position: outside;
+    background-color: #ff9999;
+    padding:20px;
+  }
+
+  ul.b {
+    list-style-position: inside;
+  }
+
+

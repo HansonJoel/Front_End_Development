@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Basic reset */
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+
+      /* Custom unordered list */
+      ul.custom {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul.custom li {
+        padding: 8px 0 8px 30px;
+        position: relative;
+        border-bottom: 1px solid #eee;
+      }
+
+      ul.custom li::before {
+        content: "✓";
+        color: #4caf50;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+
+      /* Numbered list with custom numbers */
+      ol.fancy {
+        counter-reset: fancy-counter;
+        list-style: none;
+      }
+
+      ol.fancy li {
+        counter-increment: fancy-counter;
+        margin-bottom: 10px;
+      }
+
+      ol.fancy li::before {
+        content: counter(fancy-counter);
+        color: white;
+        background: #3498db;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 10px;
+      }
+
+      /* Horizontal navigation list */
+      ul.nav {
+        list-style: none;
+        background: #333;
+        padding: 10px;
+        margin: 0;
+      }
+
+      ul.nav li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      ul.nav li a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Custom Checkmark List</h2>
+    <ul class="custom">
+      <li>Complete CSS tutorial</li>
+      <li>Practice list styling</li>
+      <li>Build a navigation menu</li>
+    </ul>
+
+    <h2>Fancy Numbered List</h2>
+    <ol class="fancy">
+      <li>Introduction to CSS</li>
+      <li>Styling text elements</li>
+      <li>Working with lists</li>
+    </ol>
+
+    <h2>Horizontal Navigation</h2>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>
