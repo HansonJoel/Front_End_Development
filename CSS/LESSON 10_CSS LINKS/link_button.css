@@ -1,0 +1,22 @@
+body{
+    font-size: 100%;
+    padding:10px;
+}
+
+p{
+    font-size: 2rem;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+
+a:hover, a:active{
+    background-color: red;
+    /* border: 1px solid black; */
+}
