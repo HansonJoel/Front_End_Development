@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String Concatenate</title>
-</head>
-<body>
-    <h1> JavaScript String Concatenate </h1>
-    <p> string concatenation means joining two or more strings together into one.</p>
+  </head>
+  <body>
+    <h1>JavaScript String Concatenate</h1>
+    <p>
+      string concatenation means joining two or more strings together into one.
+    </p>
 
     <script>
-        // using + operator: This is the most common and simple way.
-        const firstName = "John";
-        const lastName = "Doe";
-        const fullName = firstName + " " + lastName;
+      // using + operator: This is the most common and simple way.
+      const firstName = "John";
+      const lastName = "Doe";
+      const fullName = firstName + " " + lastName;
 
-        console.log(fullName); // "John Doe"
+      console.log(fullName); // "John Doe"
 
+      // Using += Operator
+      let greeting = "Hello";
+      greeting += " World";
 
-        // Using += Operator
-        let greeting = "Hello";
-        greeting += " World";
+      console.log(greeting); // "Hello World"
 
-        console.log(greeting); // "Hello World"
+      // Using concat() Method: This method joins two or more strings and returns a new one.
+      const str1 = "JavaScript";
+      const str2 = " is awesome";
+      const result = str1.concat(str2);
 
-        // Using concat() Method: This method joins two or more strings and returns a new one.
-        const str1 = "JavaScript";
-        const str2 = " is awesome";
-        const result = str1.concat(str2);
+      console.log(result); // "JavaScript is awesome"
 
-        console.log(result); // "JavaScript is awesome"
+      // Using Template Literals (Best modern way ✅):  Use backticks (`) and ${} for variables.
+      const name = "Joel Hanson";
+      const language = "JavaScript";
 
-        // Using Template Literals (Best modern way ✅):  Use backticks (`) and ${} for variables.
-        const name = "Joel Hanson";
-        const language = "JavaScript";
-
-        const message = `Hello, I'm ${name} and I love ${language}!`;
-        console.log(message); // "Hello, I'm Joel Hanson and I love JavaScript!"
-
-
+      const message = `Hello, I'm ${name} and I love ${language}!`;
+      console.log(message); // "Hello, I'm Joel Hanson and I love JavaScript!"
     </script>
-    
-</body>
+  </body>
 </html>

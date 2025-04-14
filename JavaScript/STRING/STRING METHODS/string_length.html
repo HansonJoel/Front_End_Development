@@ -1,39 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Length Method</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>JavaScript Strings length method</h1>
-    <p>The .length property returns the length of a string: <br>
-        Abcde.length will return 5
+    <p>
+      The .length property returns the length of a string: <br />
+      Abcde.length will return 5
     </p>
 
     <h2>Example</h2>
-    <p id="para1">ABCDEFGHIJKLMNOPQRSTUVWXYZ </p>
+    <p id="para1">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
     <p>How many letters are in the English Alphabet as shown above?</p>
-  
+
     <p id="alphabet"></p>
 
     <!-- onclick button -->
-    <button  id="removeButton" onclick="changeStyle()"> click to find out</button>
+    <button id="removeButton" onclick="changeStyle()">click to find out</button>
     <p id="answer"></p>
 
-<script>
-function changeStyle(){
-    let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    document.getElementById("alphabet").innerHTML = letters.length;   // this returns the length of a string
-   
+    <script>
+      function changeStyle() {
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("alphabet").innerHTML = letters.length; // this returns the length of a string
 
-    let answer= "There are 26 letters in the English Alphabet."
-    document.getElementById("answer").innerHTML=answer
+        let answer = "There are 26 letters in the English Alphabet.";
+        document.getElementById("answer").innerHTML = answer;
 
-    document.getElementById("removeButton").remove();
-}
-
-</script>
-</body>
+        document.getElementById("removeButton").remove();
+      }
+    </script>
+  </body>
 </html>
