@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript string slice</title>
+</head>
+<body>
+    <h1>JavaScript string slice </h1>
+    <p>The slice() method is used to extract a portion of an array (or string) without modifying the original array or string
+    <br><br>
+    
+    <b>Syntax:</b>array.slice(start, end) <br>
+    start: The index to begin slicing (inclusive) <br>
+
+    end: The index to stop slicing (exclusive) <br>
+
+    If end is omitted, it slices to the end of the array <br><br>
+    <b>Example:</b> <br>
+    Slice out the word Java from "JavaScript". <br>
+
+    <p id="slice"></p>
+    
+    </p>
+
+    <script>
+        const word = "JavaScript";
+        document.getElementById("slice").innerHTML = word.slice(0,4)
+
+        // see the console
+        const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+        const slicedFruits = fruits.slice(1, 4);
+        console.log(slicedFruits); // ["banana", "cherry", "date"]
+    </script>
+
+    
+</body>
+</html>

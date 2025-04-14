@@ -1,0 +1,26 @@
+body{
+    font-size: 1rem;
+    padding:10%
+}
+
+
+section-1 p{
+    text-align: justify;
+}
+
+section-2 p{
+    text-align:left;
+}
+
+section-3{
+    text-align: right;
+}
+
+section-4{
+    text-align: center;
+}
+
+section-5{
+    text-align: justify;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+body{
+    padding: 10%;
+    font-size: 2rem;
+}
+
+
+div-1 p{
+    text-decoration: underline;
+}
+
+div-2 p{
+    text-decoration: overline;
+}
+
+div-3 p{
+    text-decoration: line-through;
+}
+
+div-4 p{
+    text-decoration: underline line-through;
+}

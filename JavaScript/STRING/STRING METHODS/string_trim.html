@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1> JavaScript String Trim</h1>
+    <p>
+        The .trim() method in JavaScript is super useful when you're working with user input or cleaning up strings. <br>
+        The .trim() method removes whitespace from both ends of a string.
+        That means it removes: <br>
+        <ul>
+            <li> spaces</li>
+            <li> tabs (\t)</li>
+            <li> newlines (\n)</li>
+        </ul>
+        But it does not affect the middle of the string. <br><br>
+        <b>Syntax:</b> string.trim()
+    </p>
+
+
+    <script>
+      const messy = "   Hello World!   ";
+      const clean = messy.trim();
+
+      console.log(clean);        // "Hello World!"
+      console.log(messy.length); // 18
+      console.log(clean.length); // 12  
+
+
+// Example 2: User input cleanup
+      let username = prompt("Enter your name:");
+      username = username.trim();
+
+      console.log("Welcome, " + username);
+
+
+//   Related Methods
+//   trimStart() – Removes whitespace from the beginning only
+//   trimEnd() – Removes whitespace from the end only
+
+     "   Hello   ".trimStart(); // "Hello   "
+     "   Hello   ".trimEnd();   // "   Hello"
+
+    </script>
+</body>
+</html>
