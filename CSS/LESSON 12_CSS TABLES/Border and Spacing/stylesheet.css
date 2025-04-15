@@ -1,0 +1,13 @@
+body{
+    padding: 10%;
+    font-size:1rem;
+}
+table{
+    border: 2px solid black;
+    width: 100%;                  /* This will make the table span the entire page */
+    border-collapse: collapse;    /* Removes space between borders */
+}
+
+th, td{
+    border: 2px solid black;
+}
