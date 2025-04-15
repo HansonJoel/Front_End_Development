@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display:inline</title>
+    <style>
+    body{
+        padding: 10%;
+        font-size: 1.5rem;
+        display: block;    /* Display is usually set to block by default*/
+    }
+
+    .inline-box li{
+        background-color: green;
+        color: white;
+        display: inline;
+    }
+    
+  
+
+    </style>
+  </head>
+  <body>
+    <h1> <span>Display: inline</span></h1>
+    
+    <p>
+        An inline element DOES NOT start on a new line and only takes up as much width as necessary. <br>
+        Display block does the following:
+        <ul>
+            <li>Takes only the space needed.</li>
+            <li>Does not respect width, height, or vertical margin.</li>
+            <li>Used for text-level elements (&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;).</li>
+        </ul>
+    </p>
+
+    <p> Fundamentals of Web Development
+        <ul class="inline-box">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+    </p>
+
+  </body>
+</html>
