@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position:absolute</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 10%;
+        font-size: 1.3rem;
+      }
+
+
+      span {
+        background-color: gold;
+      }
+
+      .parent {
+        position: relative;
+        float: left;
+        width: 400px;
+        height: 300px;
+        background: lightblue;
+        width: 50%;
+      }
+
+      .child {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        background: coral;
+      }
+
+      .box {
+        position: absolute;
+        border: 2px solid black;
+        padding: 35px;
+        display: inline;
+        top: 0;
+        right: 0;
+        width: 45%;
+        background-color: rgb(94, 145, 94);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position:absolute</h1>
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed). See Example1 <br />
+      <h2> So, what does “nearest positioned ancestor” mean?</h2>
+      <p>It's the closest parent (or ancestor) that has a position set to relative, absolute, or fixed.
+
+      </p>
+      <span
+        >However; if an absolute positioned element has no positioned ancestors,
+        it uses the document body, and moves along with page scrolling. See
+        Example2</span
+      >
+      <br /> <br>
+      it is similar to float element however, there is a key difference which is
+      absolute element does not respect boundaries whereas float respects
+      boundaries i.e absolute position element are removed from the flow.
+      absolute position element does not respect the flow and can go on top of
+      any element
+      <br />
+      <br />
+      Setting the top, right, bottom, and left properties are used to position
+      the element.
+    </p>
+    <p>
+      See the box at the <span>top right of the screen </span> It is positioned
+      absolute and it does not respect boundaries.
+    </p>
+
+    <br />
+
+    <h2>Example1: with a positioned parent</h2>
+    <div class="parent">
+      <div class="child">I'm absolute</div>
+    </div>
+    <p style="float: right; width: 50%">
+      Here, the parent is position:relative and the child is position:
+      absolute(relative to the nearest positioned ancestor)
+    </p>
+
+    <div class="box">
+      <p>Example2:</p>
+      This box is position:absolute i.e without a positioned parent
+    </div>
+  </body>
+</html>

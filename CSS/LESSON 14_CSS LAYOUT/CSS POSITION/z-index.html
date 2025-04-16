@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+
+    <style>
+      img {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>z-index Property</h1>
+    <p>
+      When elements are positioned, they can overlap other elements. The z-index
+      property specifies the stack order of an element (which element should be
+      placed in front of, or behind, the others). An element can have a positive
+      or negative stack order:
+    </p>
+    <img src="./tree.jpeg" alt="tree" />
+    <p>
+      Because the image has a z-index of -1, it will be placed behind the text
+    </p>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position:relative</title>
+    <style>
+      body {
+        padding: 10%;
+        font-size: 1.2rem;
+      }
+
+      div.box {
+        position: relative;
+        border: 2px solid black;
+        display: inline;
+        /* padding: 20px; */
+        top: 100px; /* Means the box moves 100px down from where it would have been originally*/
+        left: 70px; /* means it moves 70px to the right from its original position*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position:relative</h1>
+    <p>
+      When position: relative; is used, the element is positioned relative to
+      its original position in the normal document flow, not relative to another
+      element or the page margin.
+      <br />
+      Setting the top, right, bottom, and left properties of a
+      relatively-positioned element will cause it to be adjusted away from its
+      normal position. Other content will not be adjusted to fit into any gap
+      left by the element.
+    </p>
+    <div class="box">This box is position:relative</div>
+  </body>
+</html>

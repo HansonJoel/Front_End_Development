@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float and clear</title>
+    <style>
+        p,img{
+            border: 2px solid black;
+        }
+        .left{
+            float:left;
+        }
+        .right{
+            float:right;
+        }
+        .clear{
+           clear:left;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Float and Clear</h1>
+    <p>
+      The float property is used for positioning and formatting content to the
+      left or right, allowing text and inline elements to wrap around it. <br>
+      The float property can have one of the following values:
+      <ul>
+        <li>left:  The element floats to the left of its container</li>
+        <li>right: The element floats to the right of its container</li>
+        <li>none: The element does not float (will be displayed just where it occurs in the text). This is default</li>
+        <li>inherit: The element inherits the float value of its parent</li>
+      </ul>
+      In its simplest use, the float property can be used to wrap text around images.
+    </p>
+    <h2> Exmaple 1:float Left</h2>
+    <p> <img class="left" src="./tree.jpeg" alt="tree">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis fugiat sapiente doloremque at esse laborum incidunt commodi possimus molestiae aperiam. Nulla soluta, ut ex pariatur perspiciatis molestiae porro doloremque tenetur vitae asperiores rem exercitationem. Accusamus reiciendis officia vel blanditiis modi aperiam, nobis delectus ratione ipsa laboriosam placeat beatae sequi necessitatibus!</p> 
+    <br><br><br><br>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ad repudiandae velit ipsa obcaecati perferendis harum, similique quibusdam molestias? Autem molestias corporis doloremque delectus temporibus ipsum saepe, unde voluptatibus aspernatur officia mollitia ullam libero, eum incidunt, sit quae illum maiores! Officia id officiis minus, earum molestiae quisquam fugiat voluptatem fugit?</p> -->
+    <br>
+    <h2> Exmaple 2:float Right</h2>
+    <p> <img class="right" src="./tree.jpeg" alt="tree">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis fugiat sapiente doloremque at esse laborum incidunt commodi possimus molestiae aperiam. Nulla soluta, ut ex pariatur perspiciatis molestiae porro doloremque tenetur vitae asperiores rem exercitationem. Accusamus reiciendis officia vel blanditiis modi aperiam, nobis delectus ratione ipsa laboriosam placeat beatae sequi necessitatibus!</p> <br><br>
+    <h2> Exmaple 3:float clear</h2>
+    <p>When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.</p>
+    <img class="clear" src="./tree.jpeg" alt="tree">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis fugiat sapiente doloremque at esse laborum incidunt commodi possimus molestiae aperiam. Nulla soluta, ut ex pariatur perspiciatis molestiae porro doloremque tenetur vitae asperiores rem exercitationem. Accusamus reiciendis officia vel blanditiis modi aperiam, nobis delectus ratione ipsa laboriosam placeat beatae sequi necessitatibus!</p> <br><br>
+  </body>
+</html>
