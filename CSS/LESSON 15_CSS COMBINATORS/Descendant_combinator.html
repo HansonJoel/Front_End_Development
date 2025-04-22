@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant combinators</title>
+    <style>
+      body {
+        font-size: 2rem;
+      }
+
+      .article p {
+        color: #3366cc;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descendant combinators</h1>
+    <p>
+      Selects all elements that are descendants of a specified element. <br />
+
+      Syntax: selector1 selector2 <br />
+    </p>
+
+    <p>
+      The descendant combinator matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div class="article">
+      <p>Paragraph 1 is in the div.</p>
+      <p>Paragraph 2 is in the div.</p>
+      <section>
+        <p>This nested paragraph will also be selected</p>
+      </section>
+    </div>
+
+    <p>Paragraph 4. Not in a div and is not selected</p>
+    <p>Paragraph 5. Not in a div and is not selected</p>
+  </body>
+</html>

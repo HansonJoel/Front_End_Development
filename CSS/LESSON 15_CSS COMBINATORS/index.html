@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS COMBINATORS</title>
+    <style>
+        body{
+            font-size: 1.5rem;
+        }
+        /* Descendant */
+.post p {
+  font-size: 1rem;
+}
+
+/* Child */
+.post > .intro {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Adjacent sibling */
+h2 + .intro {
+  margin-top: 0;
+}
+
+/* General sibling */
+h2 ~ p {
+  line-height: 1.6;
+}
+
+/* Combined */
+.post > .content > blockquote > p {
+  font-style: italic;
+  padding: 10px;
+  background: #f9f9f9;
+}
+    </style>
+  </head>
+  <body>
+    <h1>CSS COMBINATORS</h1>
+    <p>
+      A combinator is something that explains the relationship between the
+      selectors. <br />
+      CSS combinators allow you to combine multiple selectors to target specific elements in your HTML document based on their relationships. Understanding these is crucial for writing precise and efficient CSS.
+    </p>
+    <p> There are four main types of combinators. <br>
+    <ul>
+        <li>Descendant Selector</li>
+        <li>Child Selector</li>
+        <li>Next Sibling selectors</li>
+        <li>Subsequent-Sibling Combinator</li>
+    </ul>
+    </p>
+    <h2> Example combinning multiple combinators</h2>
+    <article class="post">
+        <h2>Blog Post Title</h2>
+        <p class="intro">First paragraph after title</p>
+        <div class="content">
+          <p>Main content paragraph</p>
+          <blockquote>
+            <p>Quote content</p>
+          </blockquote>
+        </div>
+        <p>Final thoughts</p>
+      </article>
+  </body>
+</html>

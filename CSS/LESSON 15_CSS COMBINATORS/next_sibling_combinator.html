@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Sibling Combinator</title>
+    <style>
+      body {
+        font-size: 2rem;
+      }
+
+      div + p {
+        color: #3366cc;
+        line-height: 1.6;
+      }
+
+      section + p {
+        color: white;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Next Sibling Combinator (+)</h1>
+    <p>
+      Next Sibling Combinator also known as Adjacent Sibling Selector, Selects
+      an element that is immediately after another specific element (siblings
+      with the same parent). <br />
+      Syntax: selector1 + selector2 <br />
+      h2 + p: This selects the first &lt;p&gt; element that comes immediately
+      after any &lt;h2&gt; element.
+    </p>
+    <div>
+      <p>Paragraph 1 is in the div</p>
+      <p>Paragraph 2 is in the div</p>
+      <section>
+        <p>This nested paragraph is in a div.</p>
+      </section>
+      <p>Paragraph 3. After a div.</p>
+    </div>
+
+    <p>Paragraph 4. After a div.</p>
+  </body>
+</html>

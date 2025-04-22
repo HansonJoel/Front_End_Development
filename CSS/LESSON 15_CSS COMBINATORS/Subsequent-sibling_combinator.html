@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subsequent-sibling combinator</title>
+    <style>
+      body {
+        font-size: 2rem;
+      }
+
+      h3 ~ .product,
+      h3 ~ p {
+        border-left: 3px solid #4caf50;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Subsequent-Sibling Combinator (~)</h1>
+    <p>
+      Also known as General Sibling Selector, Selects all elements that are next
+      siblings of a specified element. <br />
+      Syntax: selector1 ~ selector2 <br />
+      h2 ~ p: This selects all &lt;p&gt; elements that are siblings of and come
+      after any &lt;h2&gt; element.
+    </p>
+
+    <h3>Featured Products</h3>
+    <div class="product">Product A (styled)</div>
+    <p>Description (styled)</p>
+    <div class="product">Product B (styled)</div>
+    <hr />
+    <div class="product">Product C (not styled - after hr)</div>
+  </body>
+</html>
