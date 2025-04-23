@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      li:first-child {
+        color: red;
+      }
+      li:last-child {
+        color: blue;
+      }
+      li:nth-child(3) {
+        background-color: yellow;
+      }
+      li:nth-child(odd) {
+        font-style: italic;
+      }
+      div:empty {
+        height: 20px;
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List Styling Example</h2>
+
+    <ul>
+      <li>First item (red)</li>
+      <li>Second item (italic)</li>
+      <li>Third item (yellow background)</li>
+      <li>Fourth item (italic)</li>
+      <li>Last item (blue)</li>
+    </ul>
+
+    <div></div>
+    <p>Above is an empty div with gray background</p>
+  </body>
+</html>

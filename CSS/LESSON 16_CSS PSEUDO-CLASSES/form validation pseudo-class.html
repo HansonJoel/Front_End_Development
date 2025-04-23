@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input:required {
+        border-left: 3px solid red;
+      }
+      input:valid {
+        border-color: green;
+      }
+      input:invalid {
+        border-color: red;
+      }
+      input:in-range {
+        background-color: #e8f5e9;
+      }
+      input:out-of-range {
+        background-color: #ffebee;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Form Validation Example</h2>
+
+    <form>
+      <p>
+        <label
+          >Email (required):
+          <input type="email" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Age (10-100):
+          <input type="number" min="10" max="100" value="25" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Out of range (0-10):
+          <input type="number" min="0" max="10" value="15" />
+        </label>
+      </p>
+    </form>
+  </body>
+</html>

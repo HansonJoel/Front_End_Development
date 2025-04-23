@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Navigation menu */
+      nav a {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 0 5px;
+        text-decoration: none;
+        background-color: #f8f8f8;
+        color: #333;
+        border-radius: 4px;
+        transition: all 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #e0e0e0;
+        transform: translateY(-5px);
+      }
+
+      nav a:active {
+        transform: translateY(0);
+      }
+
+      /* Table styling */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+      /* Special effects */
+      p::first-letter {
+        font-size: 150%;
+        color: #4caf50;
+      }
+
+      ::selection {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-Class Demonstration</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>$999</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>$699</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>$399</td>
+        <td>8</td>
+      </tr>
+    </table>
+
+    <p>
+      This paragraph demonstrates the ::first-letter pseudo-element. Try
+      selecting some text to see the ::selection styling.
+    </p>
+  </body>
+</html>
