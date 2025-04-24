@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-elements and HTML Classes</title>
+    <style>
+      .second:first-child::first-line {
+        font-size: 120%;
+        font-weight: bold;
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-elements and HTML Classes</h1>
+    <p>
+      Pseudo-elements can be combined with HTML classes. <br />
+      If you wanted to make the first line of the first paragraph bold you could
+      chain the :first-child and ::first-line selectors together.
+    </p>
+
+    <p class="second">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+      minima atque, nobis necessitatibus voluptatem quia cumque. Alias omnis
+      numquam explicabo impedit laborum incidunt officiis tempora a ex pariatur!
+      Minus, tempore!
+    </p>
+  </body>
+</html>
