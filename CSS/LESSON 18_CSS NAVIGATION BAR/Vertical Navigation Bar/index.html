@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <title>CSS VERTICAL NAVIGATION BAR</title>
+  </head>
+  <body>
+    <h1>CSS VERTICAL NAVIGATION BAR</h1>
+    <p>
+      A vertical navigation bar stacks menu items in a column instead of a row
+      (like a horizontal navbar). It’s commonly used in sidebars, dashboards,
+      and minimalist designs.
+    </p>
+
+    <h2>Example of Vertical Navigation bar</h2>
+    <!-- <button class="toggle-btn">☰</button> -->
+    <nav class="vertical-nav">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      document.querySelector(".toggle-btn").addEventListener("click", () => {
+        document.querySelector(".vertical-nav").classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
