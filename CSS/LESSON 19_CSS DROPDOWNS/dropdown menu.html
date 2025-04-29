@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <style>
+      /* position the dropdown container */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        /* float:right;    This move the the button to the right of the page */
+        /* float:left;    This move the the button to the left of the page */
+      }
+
+      /* style the button */
+      .dropbtn {
+        color: white;
+        background-color: purple;
+        padding: 15px 20px;
+      }
+
+      /*  style the container containing the links */
+      .dropdown-content {
+        display: none; /*i set the dispaly to none this way the links will not be display untill you hover over it */
+        position: absolute;
+        background-color: #f9f9f9;
+      }
+
+      .dropdown-content a {
+        color: blue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        /* width: 160px; */
+      }
+
+      a:hover {
+        background-color: aqua;
+      }
+
+      /* Styling the hover */
+      .dropdown:hover .dropdown-content {
+        display: block; /* The dropdown content will be visible when we hover over the dropdown button*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dropdown Menu</h1>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </body>
+</html>

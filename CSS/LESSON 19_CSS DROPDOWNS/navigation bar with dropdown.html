@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with a dropdown menu</title>
+  </head>
+  <style>
+    
+    /* Reset and base styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+    
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    /* Navigation bar styles */
+    .nav-menu {
+        display: flex;
+        background-color: #3a3a3a;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        height: 50px; /* Set explicit height */
+        align-items: stretch; /* Make children stretch vertically */
+    }
+
+    /* Main navigation links - FIXED */
+    .main {
+        display: flex;
+        height: 100%; 
+    }
+
+    .main a {
+        color: white;
+        padding: 0 20px; /* Changed from 15px 20px */
+        text-decoration: none;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center; /* Vertically center text */
+        height: 100%; /* Fill parent height */
+    }
+
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+        display: flex;
+        height: 100%; /* Fill parent height */
+    }
+
+    /* Dropdown button */
+    .dropbtn {
+        color: white;
+        padding: 0 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    /* Dropdown content */
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 0 0 5px 5px;
+        z-index: 1;
+        top: 100%; /* Position below the button */
+        background-color: white;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .nav-menu .main a:hover {
+        background-color: rgb(172, 196, 108);
+    }
+
+
+    .nav-menu .main a:first-child:hover {          /*maintain radius on hover  for home link*/
+        background-color: rgb(172, 196, 108);
+        border-radius: 5px 0 0 5px;  
+    }
+
+
+
+    .dropdown .dropbtn:hover {
+        background-color: rgb(172, 196, 108);
+    }
+
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+  <body>
+    <h1>Create a navigation bar with a drop down menu</h1>
+    <nav class="nav-menu">
+      <div class="main">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+      </div>
+      <div class="dropdown">
+        <div class="dropbtn">Dropdown</div>
+        <div class="dropdown-content">
+          <a href="#">link 1</a>
+          <a href="#">link 2</a>
+          <a href="#">link 3</a>
+        </div>
+    </nav>
+  </body>
+</html>
